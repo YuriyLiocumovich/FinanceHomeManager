@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Finance Home Manager</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="btnCash">Cash</string>
+    <string name="btnCredCard">Credit Card</string>
+    <string name="btnCheck">Check</string>
+    <string name="btnAddCategory">New</string>
+    <string name="btnSave">Save</string>
+    <string name="btnAddCC">New CC</string>
+    <string name="btnDone">Done</string>
+    <string name="btnClose">Close</string>
+    <string name="btnChangeDate">Change date</string>
+    <string name="btnNewData">New Data</string>
+
+    <string name="lblCashCurRecord">Record for </string>
+    <string name="lblCategory">Category</string>
+    <string name="lblSum">Sum</string>
+    <string name="lblCash">Cash</string>
+    <string name="lblExpenditure">Expenditure</string>
+    <string name="lblTotal">Total</string>
+    <string name="lblCurMonthCC">This month</string>
+    <string name="lblCCThisMonthTotal">This month total CC</string>
+    <string name="lblCCTotalSum">Total CC</string>
+    <string name="lblCCNames">CC Names</string>
+    <string name="lblAddCategoryImgType">Type</string>
+    <string name="lblFragNewCategory">New category</string>
+    <string name="lblFragNewCC">New Credit Card</string>
+    <string name="lblCCNumOfMonth">Num of payments</string>
+    <string name="lblCCFirstMonth">First month</string>
+    <string name="lblCCAdditionalPayments">Additional payments</string>
+    <string name="lblAddCCType">Credit Card type</string>
+    <string name="lblAddCCToken">Card Token</string>
+    <string name="lblCCCredit">Credit</string>
+    <string name="lblCheckNumber">Check number</string>
+    <string name="lblDate">Date</string>
+    <string name="lblCheckSum">Sum</string>
+    <string name="lblTo">To</string>
+    <string name="lblFor">For</string>
+    <string name="lblCheckThisMonth">This month total Checks</string>
+    <string name="lblCheckTotalMonth">Total Checks</string>
+    <string name="lblChangeDate">Change date</string>
+    <string name="lblMainCurMonthTotal">This month total</string>
+    <string name="lblMainTotal">Total</string>
+    <string name="lblPaidByCC">Paid by CC</string>
+
+    <string name="txtSum">Enter the sum....</string>
+    <string name="txtAddCategoryNewCategory">New Category....</string>
+    <string name="txtCCNumOfMonth">Num of payments....</string>
+    <string name="txtAddCCType">CC type</string>
+    <string name="txtCheckNumber">Check number</string>
+    <string name="txtAddCCToken">Last 4 numbers....</string>
+    <string name="txtDate">Date</string>
+    <string name="txtTo">To</string>
+    <string name="txtFor">For</string>
+
+    <string name="imgMinus">Credit</string>
+    <string name="imgPlus">Debit</string>
+    <string name="rbCredit">Yes</string>
+    <string name="rbNoCredit">No</string>
+    <string name="title_activity_check">CheckActivity</string>
+
+</resources>

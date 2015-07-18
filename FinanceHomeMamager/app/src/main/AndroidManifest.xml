@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yuriy_mac.financehomemanager" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.yuriy_mac.financehomemanager.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.yuriy_mac.financehomemanager.CashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.CashActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.yuriy_mac.financehomemanager.CreditCardActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.CreditCardActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.yuriy_mac.financehomemanager.CheckActivity"
+            android:label="@string/title_activity_check" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/lblCheckCurRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblCashCurRecord"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/lblCategory"
+            android:textSize="@dimen/text_size" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="@dimen/txtWidth"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.example.yuriy_mac.financehomemanager.AddButton
+            android:layout_width="@dimen/btnWidth"
+            android:layout_height="@dimen/btnHeight"
+            android:layout_gravity="center_vertical|end"
+            android:onClick="btnAddCategoryClick"
+            android:text="@string/btnAddCategory" />
+    </LinearLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="top|start"
+            android:layout_row="1"
+            android:text="@string/lblCheckNumber"
+            android:textSize="@dimen/text_size" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="top|start"
+            android:layout_row="1" />
+
+        <EditText
+            android:id="@+id/txtCheckNumber"
+            android:layout_width="@dimen/txtWidth"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_gravity="top|start"
+            android:layout_row="1"
+            android:hint="@string/txtCheckNumber"
+            android:inputType="number"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="center_vertical"
+            android:layout_row="2"
+            android:text="@string/lblDate"
+            android:textSize="@dimen/text_size" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="top|start"
+            android:layout_row="2" />
+
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dpCheckDate"
+            android:layout_column="3"
+            android:layout_gravity="top|start"
+            android:layout_row="2"
+            android:calendarViewShown="false" />
+        <!--
+              <EditText
+            android:id="@+id/txtCheckDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_row="2"
+            android:layout_gravity="top|start"
+            android:hint="@string/txtDate"
+            android:inputType="date"
+            android:textSize="@dimen/text_size" />
+        -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="top|start"
+            android:layout_row="3"
+            android:text="@string/lblTo"
+            android:textSize="@dimen/text_size" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="top|start"
+            android:layout_row="3" />
+
+        <EditText
+            android:id="@+id/txtTo"
+            android:layout_width="@dimen/txtWidth"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_gravity="top|start"
+            android:layout_row="3"
+            android:hint="@string/txtTo"
+            android:inputType="text"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="top|start"
+            android:layout_row="4"
+            android:text="@string/lblFor"
+            android:textSize="@dimen/text_size" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="top|start"
+            android:layout_row="4" />
+
+        <EditText
+            android:id="@+id/txtFor"
+            android:layout_width="@dimen/txtWidth"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_gravity="top|start"
+            android:layout_row="4"
+            android:hint="@string/txtFor"
+            android:inputType="text"
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="top|start"
+            android:layout_row="5"
+            android:text="@string/lblCheckSum"
+            android:textSize="@dimen/text_size" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="top|start"
+            android:layout_row="5" />
+
+        <EditText
+            android:id="@+id/txtCheckSum"
+            android:layout_width="@dimen/txtWidth"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_gravity="top|start"
+            android:layout_row="5"
+            android:hint="@string/txtSum"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_size" />
+    </GridLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_back"
+            android:onClick="btnSaveClick"
+            android:text="@string/btnSave"
+            android:textSize="@dimen/text_size" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_back"
+            android:onClick="btnCloseClick"
+            android:text="@string/btnClose"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+</LinearLayout>

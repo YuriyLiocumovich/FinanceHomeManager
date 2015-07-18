@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llCashRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/lblCashCurRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblCashCurRecord"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblCategory"
+            android:textSize="@dimen/text_size"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="center_vertical|start" />
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="@dimen/txtWidth"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_gravity="top|start"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_gravity="top|start" />
+
+        <com.example.yuriy_mac.financehomemanager.AddButton
+            android:layout_width="@dimen/btnWidth"
+            android:layout_height="@dimen/btnHeight"
+            android:onClick="btnAddCategoryClick"
+            android:text="@string/btnAddCategory"
+            android:layout_row="1"
+            android:layout_column="4"
+            android:layout_gravity="center_vertical|start" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/lblSum"
+            android:textSize="@dimen/text_size"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_gravity="center_vertical|start" />
+
+        <EditText
+            android:id="@+id/txtSum"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/txtWidth"
+            android:hint="@string/txtSum"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_size"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_gravity="top|start" />
+
+        <Space android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_gravity="top|start"/>
+
+        <Button
+            android:layout_width="@dimen/btnWidth"
+            android:layout_height="@dimen/btnHeight"
+            android:layout_row="2"
+            android:layout_column="4"
+            android:background="@drawable/button_back"
+            android:onClick="btnChangeDateClick"
+            android:text="@string/btnChangeDate"
+            android:textSize="@dimen/text_size"
+            android:layout_gravity="top|start"/>
+
+    </GridLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_back"
+            android:onClick="btnSaveClick"
+            android:text="@string/btnSave"
+            android:textSize="@dimen/text_size" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_back"
+            android:onClick="btnCloseClick"
+            android:text="@string/btnClose"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+</LinearLayout>

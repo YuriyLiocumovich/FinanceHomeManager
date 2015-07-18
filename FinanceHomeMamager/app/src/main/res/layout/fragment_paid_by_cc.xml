@@ -1,0 +1,90 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:text="@string/lblTotal"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/txtCCTotalSum"
+            android:layout_width="@dimen/txtWidth"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:hint="@string/txtSum"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:text="@string/lblCCNumOfMonth"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/txtCCNumOfMonth"
+            android:layout_width="@dimen/txtWidth"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:hint="@string/txtCCNumOfMonth"
+            android:inputType="number"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:text="@string/lblCCFirstMonth"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/txtCCFirstMonth"
+            android:layout_width="@dimen/txtWidth"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:hint="@string/txtSum"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:text="@string/lblCCAdditionalPayments"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/txtCAdditionalPayments"
+            android:layout_width="@dimen/txtWidth"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="4"
+            android:hint="@string/txtSum"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_size" />
+
+    <Button
+        android:id="@+id/btnPaidByCCSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="5"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center|top"
+        android:text="@string/btnDone"
+        android:textSize="@dimen/text_size"
+        style="?android:attr/buttonBarButtonStyle" />
+</GridLayout>
+
